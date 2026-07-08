@@ -1,0 +1,410 @@
+/* ==========================================
+   CHICKEN AFFAIR SMART MENU V2
+   ClientFirst Digital
+========================================== */
+
+:root{
+    --bg:#0b0b0b;
+    --card:#171717;
+    --card2:#202020;
+
+    --white:#ffffff;
+    --light:#e9e9e9;
+    --muted:#b5b5b5;
+
+    --orange:#f4a261;
+    --orange-dark:#d9792c;
+
+    --border:#2b2b2b;
+
+    --radius:16px;
+
+    --shadow:0 8px 30px rgba(0,0,0,.45);
+
+    --transition:.30s ease;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:var(--bg);
+    color:var(--white);
+
+    font-family:
+    Inter,
+    Arial,
+    sans-serif;
+
+    line-height:1.6;
+
+}
+
+/* ======================================
+            HERO SECTION
+====================================== */
+
+.hero{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+
+    background:#000;
+
+}
+
+.hero-cover{
+
+    width:100%;
+    max-width:720px;
+
+    display:block;
+
+    margin:auto;
+
+    object-fit:contain;
+
+}
+
+/* ======================================
+           STICKY NAVIGATION
+====================================== */
+
+.tabs{
+
+    position:sticky;
+    top:0;
+
+    z-index:999;
+
+    display:flex;
+    overflow-x:auto;
+
+    gap:8px;
+
+    padding:12px;
+
+    background:#111;
+
+    border-bottom:1px solid var(--border);
+
+    scrollbar-width:none;
+
+}
+
+.tabs::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+.tabs a{
+
+    text-decoration:none;
+
+    color:var(--light);
+
+    white-space:nowrap;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    background:#1b1b1b;
+
+    transition:var(--transition);
+
+    font-size:15px;
+
+}
+
+.tabs a:hover{
+
+    background:var(--orange);
+
+    color:black;
+
+}
+
+/* ======================================
+            MENU SECTION
+====================================== */
+
+.menu-section{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:50px 20px;
+
+}
+
+/* ======================================
+         CATEGORY IMAGE
+====================================== */
+
+.section-image{
+
+    margin-bottom:25px;
+
+}
+
+.section-image img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:18px;
+
+    box-shadow:var(--shadow);
+
+}
+
+/* ======================================
+          SECTION TITLE
+====================================== */
+
+.section-title{
+
+    color:var(--orange);
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+    font-weight:700;
+
+}
+
+/* ======================================
+         SUB CATEGORY
+====================================== */
+
+.menu-category{
+
+    margin-bottom:45px;
+
+}
+
+.menu-category h3{
+
+    color:white;
+
+    font-size:24px;
+
+    margin-bottom:18px;
+
+}
+
+/* ======================================
+            MENU CARD
+====================================== */
+
+.menu-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 18px;
+
+    margin-bottom:10px;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    transition:var(--transition);
+
+}
+
+.menu-item:hover{
+
+    transform:translateY(-3px);
+
+    background:var(--card2);
+
+}
+
+.menu-item span:first-child{
+
+    color:var(--light);
+
+    font-size:17px;
+
+}
+
+.menu-item span:last-child{
+
+    color:var(--orange);
+
+    font-weight:700;
+
+    font-size:17px;
+
+}
+
+/* ======================================
+          PRICE TABLE
+====================================== */
+
+.price-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    overflow:hidden;
+
+    border-radius:15px;
+
+    margin-top:15px;
+
+}
+
+.price-table th{
+
+    background:var(--orange);
+
+    color:black;
+
+    padding:15px;
+
+    font-size:15px;
+
+}
+
+.price-table td{
+
+    background:#181818;
+
+    border-bottom:1px solid #2b2b2b;
+
+    padding:15px;
+
+    text-align:center;
+
+}
+
+.price-table tr:hover td{
+
+    background:#202020;
+
+}
+
+/* ======================================
+          FOOTER
+====================================== */
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    color:gray;
+
+    font-size:14px;
+
+}
+
+/* ======================================
+            MOBILE
+====================================== */
+
+@media(max-width:768px){
+
+.hero{
+
+    min-height:auto;
+
+}
+
+.hero-cover{
+
+    width:100%;
+
+}
+
+.section-title{
+
+    font-size:28px;
+
+}
+
+.menu-category h3{
+
+    font-size:22px;
+
+}
+
+.menu-item{
+
+    padding:14px;
+
+}
+
+.tabs{
+
+    padding:10px;
+
+}
+
+.tabs a{
+
+    font-size:14px;
+
+    padding:9px 15px;
+
+}
+
+.price-table th,
+.price-table td{
+
+    padding:12px;
+
+    font-size:14px;
+
+}
+
+}
+
+/* ======================================
+          DESKTOP
+====================================== */
+
+@media(min-width:1100px){
+
+.menu-section{
+
+    max-width:1000px;
+
+}
+
+.hero-cover{
+
+    max-width:780px;
+
+}
+
+}
