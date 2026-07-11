@@ -408,3 +408,85 @@ footer{
 }
 
 }
+
+/* ===============================
+        CONTACT SECTION
+================================ */
+
+.contact-section{
+
+    padding:60px 20px;
+
+    background:#111;
+
+    border-top:1px solid #2b2b2b;
+
+}
+
+.contact-card{
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+.contact-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    padding:20px;
+
+    margin-bottom:18px;
+
+    background:#1b1b1b;
+
+    border:1px solid #2c2c2c;
+
+    border-radius:16px;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    transition:.30s ease;
+
+}
+
+.contact-item:hover{
+
+    transform:translateY(-3px);
+
+    background:#242424;
+
+}
+
+.icon{
+
+    font-size:30px;
+
+}
+
+.contact-item strong{
+
+    display:block;
+
+    margin-bottom:6px;
+
+    color:#f4a261;
+
+    font-size:18px;
+
+}
+
+.contact-item p{
+
+    color:#ddd;
+
+    line-height:1.6;
+
+}
